@@ -34,6 +34,7 @@ namespace FFPT_Project.Service.Service
         Task<ProductResponse> UpdateProduct(int productId, UpdateProductRequest request);
         Task<PagedResults<ProductResponse>> SearchProduct(string searchString, int timeSlotId, PagingRequest paging);
         Task<PagedResults<ProductResponse>> SearchProductInMenu(string searchString, int timeSlotId, PagingRequest paging);
+        Task<int> DeleteProduct(int productId);
 
     }
     public class ProductServices : IProductServices
@@ -213,6 +214,34 @@ namespace FFPT_Project.Service.Service
             var result = PageHelper<ProductResponse>.Paging(product, paging.Page, paging.PageSize);
             return result;
         }
+        public async Task<int> DeleteProduct(int productId)
+        {
+            try
+            {
+                var product = await _unitOfWork.Repository<Product>().GetAll()
+                    .Where(x => x.Id == productId)
+                .FirstOrDefaultAsync();
+                if (product == null)
+                {
+                    throw new CrudException(HttpStatusCode.NotFound, "Product not found.", productId.ToString());
+                }
+                else
+                {
+                    _unitOfWork.Repository<Product>().Delete(product);
+                    await _unitOfWork.CommitAsync();
+                }
+                return productId;
+            }
+            catch (CrudException ex)
+            {
+                throw ex;
+            }
+            catch (Exception e)
+            {
+                throw new CrudException(HttpStatusCode.BadRequest, "Delete product error!!!!", e.Message);
+            }
+        }
+
 
         public async Task<PagedResults<ProductResponse>> GetProductByCategory(int cateId, PagingRequest paging)
         {

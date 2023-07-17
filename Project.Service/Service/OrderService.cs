@@ -205,7 +205,7 @@ namespace FFPT_Project.Service.Service
                     #region Order detail
                     List<OrderDetail> listOrderDetail = new List<OrderDetail>();
                     List<OrderDetailResponse> listOrderDetailResponse = new List<OrderDetailResponse>();
-                    order.TotalAmount = 0;
+                    order.TotalAmount = request.TotalAmount;
                     foreach (var detail in request.OrderDetails)
                     {
 

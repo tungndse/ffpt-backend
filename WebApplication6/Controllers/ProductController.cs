@@ -148,6 +148,25 @@ namespace FFPT_Project.API.Controllers
             var rs = await _productService.SearchProduct(searchString, timeSlotId, paging);
             return Ok(rs);
         }
+
+        /// <summary>
+        /// Delete Product Menu
+        /// </summary>
+        /// <param name="productInMenuId"></param>
+        /// <returns></returns>
+        [HttpDelete("DeleteProduct")]
+        public async Task<ActionResult<ProductResponse>> DeleteProduct([FromQuery] int productId)
+        {
+            try
+            {
+                var rs = await _productService.DeleteProduct(productId);
+                return Ok(rs);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }
 
