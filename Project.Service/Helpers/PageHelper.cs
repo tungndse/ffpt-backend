@@ -1,9 +1,6 @@
 ﻿using FFPT_Project.Service.DTO.Response;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
-namespace FFPT_Project.Service.Helpers
+namespace Project.Service.Helpers
 {
     public static class PageHelper<T> where T : class
     {

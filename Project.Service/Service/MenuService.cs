@@ -1,25 +1,16 @@
-﻿using AutoMapper;
+﻿using System.Net;
+using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using Microsoft.EntityFrameworkCore;
-using FFPT_Project.Data.UnitOfWork;
-using FFPT_Project.Service.DTO.Request;
 using FFPT_Project.Service.DTO.Response;
-using FFPT_Project.Service.Exceptions;
-using FFPT_Project.Service.Helpers;
-using FFPT_Project.Service.Utilities;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using FFPT_Project.Data.Entity;
-using System.Linq.Dynamic.Core;
-using Azure.Core;
+using Project.Data.Entity;
+using Project.Data.UnitOfWork;
+using Project.Service.DTO.Request;
+using Project.Service.Exceptions;
+using Project.Service.Helpers;
+using Project.Service.Utilities;
 
-namespace FFPT_Project.Service.Service
+namespace Project.Service.Service
 {
     public interface IMenuService
     {

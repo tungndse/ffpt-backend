@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Dynamic.Core;
+﻿using System.Linq.Dynamic.Core;
 using System.Reflection;
-using System.Text;
-using FFPT_Project.Service.Commons;
+using Project.Service.Commons;
 
-namespace FFPT_Project.Service.Utilities
+namespace Project.Service.Utilities
 {
     public static class LinqUtils
     {

@@ -1,6 +1,4 @@
-﻿using FFPT_Project.Data.Entity;
-using FFPT_Project.Service.DTO.Request;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

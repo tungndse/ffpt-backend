@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FFPT_Project.Service.Commons
+﻿namespace Project.Service.Commons
 {
     public class StringAttribute : Attribute
     {

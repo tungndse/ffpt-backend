@@ -1,6 +1,6 @@
-﻿using static FFPT_Project.Service.Helpers.SortType;
+﻿using static Project.Service.Helpers.SortType;
 
-namespace FFPT_Project.Service.DTO.Request
+namespace Project.Service.DTO.Request
 {
     public class PagingRequest
     {

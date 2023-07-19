@@ -1,4 +1,4 @@
-﻿namespace FFPT_Project.Service.Helpers
+﻿namespace Project.Service.Helpers
 {
     public static class SortType
     {

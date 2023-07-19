@@ -1,7 +1,6 @@
-﻿using System;
-using System.Net;
+﻿using System.Net;
 
-namespace FFPT_Project.Service.Exceptions
+namespace Project.Service.Exceptions
 {
     public class CrudException : Exception
     {

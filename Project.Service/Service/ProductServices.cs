@@ -1,26 +1,16 @@
-﻿using AutoMapper;
+﻿using System.Net;
+using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using Azure.Core;
-using FFPT_Project.Data.Context;
-using FFPT_Project.Data.Entity;
-using FFPT_Project.Data.UnitOfWork;
-using FFPT_Project.Service.DTO.Request;
 using FFPT_Project.Service.DTO.Response;
-using FFPT_Project.Service.Exceptions;
-using FFPT_Project.Service.Helpers;
-using FFPT_Project.Service.Utilities;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
-using static FFPT_Project.Service.Helpers.Enum;
+using Project.Data.Entity;
+using Project.Data.UnitOfWork;
+using Project.Service.DTO.Request;
+using Project.Service.Exceptions;
+using Project.Service.Helpers;
+using static Project.Service.Helpers.Enum;
 
-namespace FFPT_Project.Service.Service
+namespace Project.Service.Service
 {
     public interface IProductServices
     {

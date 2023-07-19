@@ -1,34 +1,15 @@
-﻿using AutoMapper;
+﻿using System.Net;
+using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using FFPT_Project.Data.Entity;
-using FFPT_Project.Data.UnitOfWork;
-using FFPT_Project.Service.DTO.Request;
 using FFPT_Project.Service.DTO.Response;
-using FFPT_Project.Service.Exceptions;
-using FFPT_Project.Service.Helpers;
-using FFPT_Project.Service.Utilities;
+using Project.Data.Entity;
+using Project.Data.UnitOfWork;
+using Project.Service.DTO.Request;
+using Project.Service.Exceptions;
+using Project.Service.Helpers;
+using Project.Service.Utilities;
 
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Options;
-using Microsoft.Identity.Client;
-using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data.Entity;
-using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Linq.Dynamic.Core;
-using System.Net;
-using System.Security.Claims;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using static FFPT_Project.Service.Helpers.Enum;
-
-namespace FFPT_Project.Service.Service
+namespace Project.Service.Service
 {
     public interface ICustomerService
     {
