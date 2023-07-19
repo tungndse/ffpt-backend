@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Routing;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
+using Microsoft.AspNetCore.Routing;
 
-namespace FFPT_Project.API.Helpers
+namespace WebApplication6.Helpers
 {
     public class SlugifyParameterTransformer : IOutboundParameterTransformer
     {

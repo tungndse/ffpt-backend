@@ -1,9 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using Microsoft.AspNetCore.Builder;
 
-namespace FFPT_Project.Data
+namespace Project.Data
 {
     public static class MigrationExtension
     {

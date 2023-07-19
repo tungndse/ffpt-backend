@@ -1,10 +1,9 @@
 ﻿using AutoMapper;
-using FFPT_Project.Data.Entity;
-using FFPT_Project.Service.DTO.Request;
 using FFPT_Project.Service.DTO.Response;
-using System.Drawing;
+using Project.Data.Entity;
+using Project.Service.DTO.Request;
 
-namespace FFPT_Project.API.Mapper
+namespace WebApplication6.Mapper
 {
     public class AutoMapperProfile : Profile
     {

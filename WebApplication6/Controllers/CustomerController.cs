@@ -1,19 +1,13 @@
-﻿using FFPT_Project.Data.Entity;
-using FFPT_Project.Service.DTO.Request;
+﻿using System.Threading.Tasks;
 using FFPT_Project.Service.DTO.Response;
-using FFPT_Project.Service.Service;
-using Google.Apis.Auth;
-using Google.Apis.Auth.AspNetCore3;
-using Google.Apis.Services;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Threading.Tasks;
+using Project.Service.DTO.Request;
+using Project.Service.Service;
+using WebApplication6.Helpers;
 
-namespace FFPT_Project.API.Controllers
+namespace WebApplication6.Controllers
 {
-    [Route(Helpers.SettingVersionApi.ApiVersion)]
+    [Route(SettingVersionApi.ApiVersion)]
     [ApiController]
     public class CustomerController : Controller
     {

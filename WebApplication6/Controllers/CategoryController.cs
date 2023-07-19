@@ -1,13 +1,14 @@
-﻿using FFPT_Project.Service.DTO.Request;
-using FFPT_Project.Service.DTO.Response;
-using FFPT_Project.Service.Service;
-using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using System;
 using System.Threading.Tasks;
+using FFPT_Project.Service.DTO.Response;
+using Microsoft.AspNetCore.Mvc;
+using Project.Service.DTO.Request;
+using Project.Service.Service;
+using WebApplication6.Helpers;
 
-namespace FFPT_Project.API.Controllers
+namespace WebApplication6.Controllers
 {
-    [Route(Helpers.SettingVersionApi.ApiVersion)]
+    [Route(SettingVersionApi.ApiVersion)]
     [ApiController]
     public class CategoryController : Controller
     {

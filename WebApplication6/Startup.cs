@@ -1,34 +1,22 @@
-using Autofac;
-using FFPT_Project.Service.Helpers;
-using FFPT_Project.API.Helpers;
-using FFPT_Project.API.Mapper;
-using FFPT_Project.Data;
-using FFPT_Project.Data.Context;
-using FFPT_Project.Data.MakeConnection;
-using FFPT_Project.Data.Repository;
-using FFPT_Project.Data.UnitOfWork;
-
-using Microsoft.AspNetCore.Mvc.ApplicationModels;
-
-using Microsoft.OpenApi.Models;
-using NetTopologySuite.Geometries;
-using NetTopologySuite.IO;
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using FFPT_Project.Service.Service;
-
-using Google.Apis.Auth.OAuth2;
-using Google.Apis.Auth.AspNetCore3;
-using Hangfire;
+using Autofac;
+using Project.Data;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.AspNetCore.Builder;
+using Microsoft.OpenApi.Models;
 
-namespace FFPT_Project.API
+using Project.Data.Context;
+using Project.Data.MakeConnection;
+using Project.Data.Repository;
+using Project.Data.UnitOfWork;
+using Project.Service.Service;
+using WebApplication6.Helpers;
+using WebApplication6.Mapper;
+
+namespace WebApplication6
 {
     public class Startup
     {

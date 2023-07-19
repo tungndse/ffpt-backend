@@ -1,4 +1,4 @@
-﻿namespace FFPT_Project.API.Helpers
+﻿namespace WebApplication6.Helpers
 {
     public static class SettingVersionApi
     {

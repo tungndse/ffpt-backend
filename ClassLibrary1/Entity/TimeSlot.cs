@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace FFPT_Project.Data.Entity
+﻿namespace Project.Data.Entity
 {
     public partial class TimeSlot
     {

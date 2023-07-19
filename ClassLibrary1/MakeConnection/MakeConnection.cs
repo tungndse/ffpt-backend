@@ -1,10 +1,9 @@
-﻿using FFPT_Project.Data.Context;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Project.Data.Context;
 
-
-namespace FFPT_Project.Data.MakeConnection
+namespace Project.Data.MakeConnection
 {
     public static class MakeConnection
     {

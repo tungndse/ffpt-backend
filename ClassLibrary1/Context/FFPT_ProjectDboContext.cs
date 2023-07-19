@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using FFPT_Project.Data.Entity;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
+using Project.Data.Entity;
 
-namespace FFPT_Project.Data.Context
+namespace Project.Data.Context
 {
     public partial class FFPT_ProjectDboContext : DbContext
     {

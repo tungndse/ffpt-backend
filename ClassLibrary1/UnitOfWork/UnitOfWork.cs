@@ -1,10 +1,7 @@
-﻿using FFPT_Project.Data.Context;
-using FFPT_Project.Data.Repository;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using Project.Data.Context;
+using Project.Data.Repository;
 
-namespace FFPT_Project.Data.UnitOfWork
+namespace Project.Data.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {

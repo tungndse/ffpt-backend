@@ -1,10 +1,9 @@
-
+using System.IO;
 using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using System.IO;
 
-namespace FFPT_Project.API
+namespace WebApplication6
 {
     public static class Program
     {

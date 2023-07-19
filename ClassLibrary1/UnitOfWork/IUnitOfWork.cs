@@ -1,8 +1,6 @@
-﻿using FFPT_Project.Data.Repository;
-using System;
-using System.Threading.Tasks;
+﻿using Project.Data.Repository;
 
-namespace FFPT_Project.Data.UnitOfWork
+namespace Project.Data.UnitOfWork
 {
     public interface IUnitOfWork : IDisposable
     {
